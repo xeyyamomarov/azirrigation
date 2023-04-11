@@ -2,7 +2,6 @@ const menuIcon = document.getElementById("menu-icon");
 const navbar = document.getElementsByClassName("navbar")[0];
 const nav = document.querySelectorAll("nav a");
 const header = document.getElementsByClassName("header")[0];
-console.log(header);
 
 for (let i = 0; i < nav.length; i++) {
   nav[i].addEventListener("click", () => {

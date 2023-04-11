@@ -48,7 +48,7 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  padding: 0 80px;
+  padding: 2rem 9%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -84,6 +84,7 @@ a::after {
 }
 
 section {
+  min-height: 100vh;
   padding: 10rem 9% 2rem;
 }
 
@@ -93,7 +94,7 @@ section {
   padding: 12px 28px;
   border-radius: 12px;
   cursor: pointer;
-  gap: 10;
+  /* gap: 10; */
   width: 147px;
   height: 48px;
   font-size: 16px;
@@ -252,7 +253,7 @@ section {
 }
 .video-content {
   border: 1px solid red;
-  margin: 156px 0;
+  /* margin: 156px 0; */
 }
 .about {
   display: flex;
@@ -427,8 +428,8 @@ textarea::placeholder {
   display: flex;
   flex-direction: column;
 }
-.social-media .footer-icon {
-  margin-top: 80px;
+.footer-icons .footer-icon {
+  width: 600px;
 }
 
 .footer-icon a {
@@ -526,16 +527,21 @@ textarea::placeholder {
   .services {
     padding-bottom: 7rem;
   }
-
+  .about {
+    padding-bottom: 7rem;
+  }
+  .footer {
+    padding: 2rem 3%;
+  }
 }
 @media (max-width: 768px) {
   #menu-icon {
     display: block;
   }
-  .logo img{
-  width: 183px;
-  height: 32px;
-}
+  .logo img {
+    width: 183px;
+    height: 32px;
+  }
   .navbar {
     position: absolute;
     top: 100%;
@@ -555,6 +561,7 @@ textarea::placeholder {
     flex-direction: column;
     cursor: pointer;
     padding: 2rem 3%;
+    background-color: white;
     /* background-color: #27AAE1 */
   }
   .navbar a {
@@ -653,6 +660,9 @@ textarea::placeholder {
   .about .about-content p {
     font-size: 14px;
     line-height: 21px;
+  }
+  .last-section {
+    width: 100%;
   }
   .form {
     flex-direction: column;
