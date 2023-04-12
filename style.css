@@ -34,14 +34,15 @@
   --neutrals-900: #1e1e1e;
   --neutrals-800: #3f3f3f;
 }
-
 html {
   font-size: 62.5%;
   overflow-x: hidden;
 }
-body {
+
+body{
   background-color: #f2f2f2;
 }
+/* header  */
 
 .header {
   position: fixed;
@@ -49,13 +50,27 @@ body {
   top: 0;
   width: 100%;
   padding: 2rem 9%;
+  background-color: var(--bg-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  height: 88px;
-  background-color: #f2f2f2;
 }
+.sticky {
+  background-color: white;
+}
+.logo {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-weight: 600;
+  cursor: default;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: var(--main-color);
+}
+
 #menu-icon {
   display: none;
   font-size: 30px;
@@ -82,12 +97,10 @@ a::after {
 .navbar a:hover:after {
   width: 100%;
 }
-
 section {
   min-height: 100vh;
   padding: 10rem 9% 2rem;
 }
-
 .header .btn {
   color: white;
   background-color: var(--primary-600);
@@ -110,15 +123,18 @@ section {
 .header .btn:focus {
   background-color: var(--primary-800);
 }
+
+/* main section */
 .main-content {
   background-color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 2rem 9%;
-  width: 100%;
   border-radius: 24px;
-  margin: 0;
+}
+.main-content div {
+  width: 80%;
+  display: flex;
 }
 .main-content h1 {
   font-size: 64px;
@@ -136,8 +152,8 @@ section {
   justify-content: center;
 }
 .rounded .circle {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   position: relative;
   bottom: 60px;
   animation: spin 8s linear infinite;
@@ -148,6 +164,8 @@ section {
     transform: rotate(360deg);
   }
 }
+
+/* services section */
 
 .service-text {
   text-align: center;
@@ -255,9 +273,12 @@ section {
   border: 1px solid red;
   /* margin: 156px 0; */
 }
+
+/* about section */
+
 .about {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   /* flex-wrap: wrap; */
   align-items: center;
   gap: 2rem;
@@ -287,18 +308,21 @@ section {
   color: var(--neutrals-800);
 }
 
+/* last section */
+
 .last-section {
   background-color: var(--primary-900);
   border-radius: 24px;
-  min-height: 90vh;
+  min-height: 70vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  /* align-items: center; */
 }
-.footer-up {
+.up-section {
+  width: 90%;
   display: flex;
-  margin: 45px 20px 40px 40px;
-  padding: 0 0 72px 0;
+  margin-top: 40px;
+  height: 250px;
   border-bottom: 1px solid white;
 }
 .form {
@@ -408,133 +432,36 @@ textarea::placeholder {
   line-height: 24px;
   color: white;
 }
-.sticky {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  background-color: white;
-}
-.footer {
-  width: 100%;
-}
-.footer .footer-down {
-  display: flex;
-  justify-content: space-evenly;
-}
-.footer-services {
-  width: 60%;
-  display: flex;
-  justify-content: space-between;
-}
-.social-media {
-  display: flex;
-  flex-direction: column;
-}
-.footer-icons .footer-icon {
-  width: 600px;
-}
 
-.footer-icon a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 4rem;
-  height: 4rem;
-  background-color: white;
-  border-radius: 8px;
-  font-size: 2rem;
-  color: black;
-  margin-left: 8px;
-  transition: 0.5s ease;
-}
-.footer-text {
-  margin-top: 40px;
-}
-.footer-text p {
-  font-weight: 400;
-  color: white;
-  font-size: 16px;
-  line-height: 24px;
-}
-.contact-icons {
-  height: 180px;
-}
-.contact-icon {
-  display: flex;
-  align-items: center;
-}
-.contact-icon:nth-child(2) {
-  margin-top: 24px;
-}
-.contact-icon:nth-child(3) {
-  margin-top: 24px;
-}
-.contact-icon img {
-  margin-right: 8px;
-}
-.contact-icon span {
-  display: inline-block;
-  color: white;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 27px;
-}
-.mobile-numb {
-  display: flex;
-  flex-direction: column;
-}
-.footer-service {
-  display: flex;
-  flex-direction: column;
-  height: 100px;
-}
-.footer-service h6 {
-  color: white;
-  margin: 0 0 22px 0;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 18px;
-}
-.footer-service span {
-  color: white;
-  margin: 0 0 22px 0;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 18px;
-}
-.footer-icons {
-  position: relative;
-  left: 65px;
-  bottom: 40px;
-}
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
-  }
-  .footer-up {
-    flex-direction: column-reverse;
-  }
-  .contact-us {
-    margin: 20px 0;
   }
 }
 @media (max-width: 990px) {
   .header {
     padding: 2rem 3%;
   }
-
   section {
     padding: 10rem 3% 2rem;
   }
   .services {
     padding-bottom: 7rem;
   }
-  .about {
+  .portfolio {
     padding-bottom: 7rem;
+  }
+  .contact {
+    min-height: auto;
   }
   .footer {
     padding: 2rem 3%;
   }
 }
 @media (max-width: 768px) {
+  section{
+    padding: 0;
+  }
   #menu-icon {
     display: block;
   }
@@ -549,7 +476,7 @@ textarea::placeholder {
     width: 100%;
     display: none;
   }
-  .footer-up {
+  .contact {
     margin: 44px 20px 40px 30px;
   }
   .btn {
@@ -562,18 +489,25 @@ textarea::placeholder {
     cursor: pointer;
     padding: 2rem 3%;
     background-color: white;
-    /* background-color: #27AAE1 */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    /* transition: all linear .5s; */
   }
   .navbar a {
     font-size: 2rem;
     margin: 2rem 0;
   }
+  nav {
+    transition: all linear 1s;
+  }
   .main-content {
+    background-color: #f2f2f2;
+  }
+  .main-content div {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 120px;
-    background-color: #f2f2f2;
+
     border: none;
   }
   .main-content h1 {
@@ -584,7 +518,7 @@ textarea::placeholder {
   .main-content img {
     width: 311px;
     height: 311px;
-    margin-top: 48px;
+    margin: 48px 0;
   }
   .rounded .circle {
     width: 99px;
@@ -592,6 +526,7 @@ textarea::placeholder {
     margin-top: 60px;
     display: inline-block;
   }
+  /* services section */
 
   .service-cards {
     flex-direction: column;
@@ -614,6 +549,7 @@ textarea::placeholder {
   }
   .service-problem {
     flex-direction: column;
+    margin-top: 80px;
   }
   .service-problem .problem-card {
     margin-top: 64px;
@@ -629,6 +565,9 @@ textarea::placeholder {
   }
   .mobile-content {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .mobile-service .mobile-content h3 {
     font-size: 24px;
@@ -636,15 +575,20 @@ textarea::placeholder {
     padding: 16px;
   }
   .mobile-content p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 21px;
+    width: 300px;
   }
   .video-content {
     height: 201px;
     margin: 96px 0;
   }
+
+  /* about section */
+
   .about {
     flex-direction: column;
+    min-height: 40vh;
   }
   .about .about-img img {
     width: 343px;
@@ -661,59 +605,66 @@ textarea::placeholder {
     font-size: 14px;
     line-height: 21px;
   }
-  .last-section {
-    width: 100%;
+
+  /* last section */
+  #register{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .last-section{
+    width: 500px;
+    /* margin-top: 40px; */
+    display: flex;
+    justify-content: center;
+  }
+
+  .up-section {
+    flex-direction: column-reverse;
+    margin-top: 200px;
+    align-items: center;
+    text-align: center;
+    width: 60%;
   }
   .form {
     flex-direction: column;
   }
-  .checkbox {
-    width: 100%;
+  .input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .form input {
-    width: 100%;
+  .input-box input {
+    width: 300px;
   }
-  .message {
-    margin: 0;
+
+  .contact-us h3 {
+    font-size: 20px;
   }
-  .form textarea {
-    width: 100%;
+  .contact-us p {
+    font-size: 14px;
+    line-height: 21px;
+    width: 300px;
+    margin: 12px 0;
+  }
+  input[type="radio"]:checked + label {
+    color: var(--secondary-500);
+    border: none;
   }
   label {
     border: none;
   }
-  input[type="radio"]:checked + label {
-    border: none;
-  }
-  .footer {
-    margin-left: 30px;
-  }
-  .footer-down {
-    flex-direction: column;
-  }
-  .footer-services {
-    flex-direction: column-reverse;
-    justify-content: space-between;
-  }
-  .contact-icons {
-    margin-top: 80px;
-  }
-  .contact-icon span {
-    font-size: 16px;
-  }
-  .footer-service h6 {
-    margin: 57px 0 16px 0;
-  }
-  .footer-service span {
-    font-size: 16px;
-  }
-  .footer-icons {
-    margin-top: 80px;
-    left: 0;
-  }
+}
+
+@media (max-width: 617px) {
 }
 @media (max-width: 450px) {
-  .footer-up {
-    margin: 44px 20px 40px 15px;
+  html {
+    font-size: 50%;
   }
+  .last-section{
+    width: 340px;
+  }
+}
+@media (max-width: 365px) {
 }
