@@ -765,7 +765,7 @@ textarea::placeholder {
   .message button {
     width: 300px;
   }
-  /* .footer {
+  .footer {
     margin-left: 30px;
   }
   .footer-down {
@@ -792,7 +792,7 @@ textarea::placeholder {
     margin-top: 80px;
     left: 0;
   }
-} */
+}
 
 @media (max-width: 617px) {
 }
