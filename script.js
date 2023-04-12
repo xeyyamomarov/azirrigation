@@ -11,6 +11,7 @@ for (let i = 0; i < nav.length; i++) {
 
 menuIcon.addEventListener("click", () => {
   navbar.classList.toggle("active");
+  header.classList.toggle("active")
 });
 
 document.addEventListener("scroll", () => {
