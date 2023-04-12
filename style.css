@@ -39,7 +39,7 @@ html {
   overflow-x: hidden;
 }
 
-body{
+body {
   background-color: #f2f2f2;
 }
 /* header  */
@@ -357,7 +357,7 @@ textarea:hover {
 }
 .checkbox {
   display: flex;
-  width: 375px;
+  /* width: 35px; */
   justify-content: space-between;
   align-items: center;
   margin-top: 15px;
@@ -459,9 +459,10 @@ textarea::placeholder {
   }
 }
 @media (max-width: 768px) {
-  section{
+  section {
     padding: 0;
   }
+
   #menu-icon {
     display: block;
   }
@@ -491,6 +492,10 @@ textarea::placeholder {
     background-color: white;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     /* transition: all linear .5s; */
+  }
+  .checkbox {
+    width: 340px;
+    justify-content: center;
   }
   .navbar a {
     font-size: 2rem;
@@ -556,7 +561,6 @@ textarea::placeholder {
   }
   .mobile-service {
     margin-top: 96px;
-    /* border: 1px solid red; */
     flex-direction: column-reverse;
   }
   .mobile-img img {
@@ -607,12 +611,12 @@ textarea::placeholder {
   }
 
   /* last section */
-  #register{
+  #register {
     display: flex;
     justify-content: center;
     margin-top: 40px;
   }
-  .last-section{
+  .last-section {
     width: 500px;
     /* margin-top: 40px; */
     display: flex;
@@ -624,7 +628,8 @@ textarea::placeholder {
     margin-top: 200px;
     align-items: center;
     text-align: center;
-    width: 60%;
+    position: relative;
+    top: 20px;
   }
   .form {
     flex-direction: column;
@@ -653,6 +658,13 @@ textarea::placeholder {
   }
   label {
     border: none;
+    font-size: 12px;
+  }
+  .message textarea {
+    width: 300px;
+  }
+  .message button {
+    width: 300px;
   }
 }
 
@@ -662,7 +674,7 @@ textarea::placeholder {
   html {
     font-size: 50%;
   }
-  .last-section{
+  .last-section {
     width: 340px;
   }
 }
