@@ -295,6 +295,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
 }
 .about .about-content h2 {
   font-weight: 500;
@@ -807,6 +808,6 @@ textarea::placeholder {
   }
   .last-section {
     width: 340px;
-    height: 1000px;
+    height: 1250px;
   }
 }
