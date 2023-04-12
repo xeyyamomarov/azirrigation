@@ -16,5 +16,8 @@ menuIcon.addEventListener("click", () => {
 document.addEventListener("scroll", () => {
   header.classList.toggle("sticky", window.scrollY > 80);
 });
+// document.addEventListener("click",()=>{
+//   header.classList.toggle("active")
+// })
 
 // sticky navbar
