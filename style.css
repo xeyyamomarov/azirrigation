@@ -56,7 +56,7 @@ body {
   align-items: center;
   z-index: 100;
 }
-.header.active {
+.header.head {
   background-color: white;
 }
 .sticky {
@@ -606,10 +606,16 @@ textarea::placeholder {
     margin-left: 0;
     margin-bottom: 16px;
   }
+  .message{
+    width: 100%;
+  }
+  .message textarea{
+    width: 100%;
+  }
 }
 @media (max-width: 768px) {
   section {
-    padding: 0;
+    padding-bottom: 3rem;
   }
 
   #menu-icon {
@@ -658,6 +664,7 @@ textarea::placeholder {
   }
   .main-content {
     background-color: #f2f2f2;
+    margin: 0;
 
   }
   .main-content .container {
@@ -778,7 +785,7 @@ textarea::placeholder {
 
   .up-section {
     flex-direction: column-reverse;
-    align-items: center;
+    /* align-items: center; */
     text-align: center;
     height: 530px;
   }
@@ -799,6 +806,11 @@ textarea::placeholder {
   .contact-us h3 {
     font-size: 20px;
   }
+  .contact-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .contact-us p {
     font-size: 14px;
     line-height: 21px;
@@ -816,12 +828,12 @@ textarea::placeholder {
   .message{
     margin: 0;
   }
-  .message textarea {
+  /* .message textarea {
     width: 340px;
   }
   .message button {
     width: 340px;
-  }
+  } */
 
   .footer-services {
     flex-direction: column-reverse;
