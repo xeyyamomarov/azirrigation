@@ -101,7 +101,6 @@ a::after {
   width: 100%;
 }
 section {
-  min-height: 100vh;
   padding: 10rem 9% 2rem;
 }
 .header .btn {
@@ -134,10 +133,12 @@ section {
   justify-content: center;
   align-items: center;
   border-radius: 24px;
+  margin-top: 56px;
 }
-.main-content div {
+.main-content .container {
   width: 80%;
   display: flex;
+  align-items: center;
 }
 .main-content h1 {
   font-size: 64px;
@@ -274,7 +275,7 @@ section {
 }
 .video-content {
   border: 1px solid red;
-  /* margin: 156px 0; */
+  margin: 156px 0;
 }
 
 /* about section */
@@ -295,7 +296,6 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 .about .about-content h2 {
   font-weight: 500;
@@ -516,7 +516,7 @@ textarea::placeholder {
 .footer-service {
   display: flex;
   flex-direction: column;
-  height: 100px;
+  width: 300px;
 }
 .footer-service h6 {
   color: white;
@@ -543,6 +543,33 @@ textarea::placeholder {
   html {
     font-size: 55%;
   }
+  .main-content h1{
+    font-size: 50px;
+  }
+  .mobile-service .mobile-content h3{
+    font-size: 30px;
+  }
+  .mobile-content p{
+    font-size: 16px;
+  }
+  .mobile-img img{
+    width: 530px;
+    height: 262px;
+  }
+  .about .about-img img{
+    width: 510px;
+    height: 420px;
+  }
+  .contact-icon span{
+    font-size: 16px;
+  }
+  .footer-service span{
+    font-size: 16px;
+  }
+  .footer-up{
+    width: 90%;
+    /* justify-content: space-evenly; */
+  }
 }
 @media (max-width: 990px) {
   .header {
@@ -557,9 +584,9 @@ textarea::placeholder {
   .contact {
     min-height: auto;
   }
-  /* .footer {
-    padding: 2rem 3%;
-  } */
+  .last-section .last-up {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   section {
@@ -610,8 +637,9 @@ textarea::placeholder {
   }
   .main-content {
     background-color: #f2f2f2;
+
   }
-  .main-content div {
+  .main-content .container {
     display: flex;
     flex-direction: column;
     align-items: center;
