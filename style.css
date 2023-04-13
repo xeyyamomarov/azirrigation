@@ -570,6 +570,19 @@ textarea::placeholder {
     width: 90%;
     /* justify-content: space-evenly; */
   }
+  .up-section{
+    height: 300px;
+  }
+  .input-box input{
+    width: 300px;
+  }
+  .checkbox{
+    flex-direction: column;
+  }
+ label{
+    width: 100%;
+    margin-top: 10px;
+  }
 }
 @media (max-width: 990px) {
   .header {
@@ -584,8 +597,14 @@ textarea::placeholder {
   .contact {
     min-height: auto;
   }
-  .last-section .last-up {
-    display: none;
+  .up-section{
+    flex-direction: column-reverse;
+    height: 450px;
+    justify-content: center;
+  }
+  .contact-us{
+    margin-left: 0;
+    margin-bottom: 16px;
   }
 }
 @media (max-width: 768px) {
@@ -626,7 +645,9 @@ textarea::placeholder {
   }
   .checkbox {
     width: 340px;
+    flex-direction: row;
     justify-content: center;
+    margin: 20px 0;
   }
   .navbar a {
     font-size: 2rem;
@@ -759,6 +780,7 @@ textarea::placeholder {
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
+    height: 530px;
   }
   .form {
     flex-direction: column;
@@ -767,11 +789,13 @@ textarea::placeholder {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
   .input-box input {
-    width: 300px;
+    width: 100%;
   }
 
+  
   .contact-us h3 {
     font-size: 20px;
   }
@@ -789,11 +813,14 @@ textarea::placeholder {
     border: none;
     font-size: 12px;
   }
+  .message{
+    margin: 0;
+  }
   .message textarea {
-    width: 300px;
+    width: 340px;
   }
   .message button {
-    width: 300px;
+    width: 340px;
   }
 
   .footer-services {
@@ -833,9 +860,5 @@ textarea::placeholder {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
-  }
-  .last-section {
-    width: 340px;
-    height: 1250px;
   }
 }
