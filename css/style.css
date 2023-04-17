@@ -897,3 +897,20 @@ textarea::placeholder {
     height: 600px;
    }
 }
+@media (max-width: 450px) {
+  html{
+    font-size: 55%;
+  }
+ 
+  .last-up{
+    display: none;
+  }
+  .checkbox{
+    width: 100%;
+    flex-direction: column;
+  }
+
+
+  
+
+}
